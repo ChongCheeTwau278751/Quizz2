@@ -67,10 +67,10 @@ public class WaterCalculator {
 		JButton btnTellMe = new JButton("Tell Me!!");
 		btnTellMe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int weight1;
+				double weight1;
 				double ans;
 				try {
-				weight1 = Integer.parseInt(textField1.getText());
+					weight1 = Double.parseDouble(textField1.getText());
 					ans = weight1 * 0.033;
 			
 				JOptionPane.showMessageDialog(null, "Buddy, you should drink " + ans + "L of water a day!");
